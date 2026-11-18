@@ -1,4 +1,3 @@
-
 /* =========================
    ROOT & RESET
 ========================= */
@@ -1857,4 +1856,37 @@ body {
   .youtube-heading h2 {
     font-size: 26px;
   }
+}
+
+/* YouTube section — Red / White theme */
+.youtube {
+  background: #ffffff;
+}
+
+.youtube-heading h2 {
+  color: #292929;
+}
+
+.youtube-line {
+  background: #dc2626;
+}
+
+.youtube-video {
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 12px 30px rgba(220, 38, 38, .08);
+}
+
+.youtube-description {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 12px 30px rgba(220, 38, 38, .06);
+}
+
+.youtube-description h3 {
+  color: #dc2626;
+}
+
+.youtube-description p {
+  color: #6b7280;
 }
