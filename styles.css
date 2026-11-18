@@ -1,3 +1,4 @@
+
 /* =========================
    ROOT & RESET
 ========================= */
@@ -1766,127 +1767,379 @@ body {
   }
 }
 
-/* YouTube Presentation Section */
-.youtube {
-  padding: 80px 0;
+
+/* =====================================
+   RED - WHITE - GREEN THEME
+   ธีมสีแดง ขาว เขียว
+===================================== */
+
+:root {
+  --bg: #ffffff;
+  --bg-secondary: #f0fdf4;
+  --card: #ffffff;
+
+  --purple: #15803d;
+  --purple-light: #16a34a;
+
+  --text: #222222;
+  --muted: #64748b;
+  --border: rgba(22, 101, 52, 0.15);
+
+  --gradient: linear-gradient(135deg, #15803d, #22c55e);
 }
 
-.youtube-heading {
-  text-align: center;
-  margin-bottom: 30px;
+/* พื้นหลังเว็บไซต์ */
+body {
+  background: #ffffff;
+  color: #222222;
 }
 
-.youtube-heading h2 {
-  font-family: 'Kanit', sans-serif;
-  font-size: 32px;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 12px;
+.bg-glow {
+  background: #16a34a;
+  opacity: 0.07;
 }
 
+/* Navbar */
+.header {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  color: #222222;
+}
+
+.logo span {
+  color: #15803d;
+}
+
+.nav-link {
+  color: #555555;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #15803d;
+}
+
+.nav-toggle {
+  color: #15803d;
+}
+
+/* ปุ่ม */
+.btn-primary {
+  background: linear-gradient(135deg, #15803d, #22c55e);
+  color: #ffffff;
+  box-shadow: 0 8px 25px rgba(21, 128, 61, 0.2);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 12px 30px rgba(21, 128, 61, 0.3);
+}
+
+.btn-outline {
+  color: #15803d;
+  border-color: #15803d;
+}
+
+.btn-outline:hover {
+  background: #f0fdf4;
+  border-color: #dc2626;
+  color: #dc2626;
+}
+
+/* Hero */
+.hero-greeting {
+  color: #dc2626;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #15803d, #dc2626);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.available {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+  color: #166534;
+}
+
+.status-dot {
+  background: #22c55e;
+  box-shadow: 0 0 12px #22c55e;
+}
+
+.hero-socials a {
+  color: #64748b;
+}
+
+.hero-socials a:hover {
+  color: #dc2626;
+}
+
+/* รูปโปรไฟล์ */
+.image-frame,
+.profile-card {
+  border-color: rgba(21, 128, 61, 0.2);
+  box-shadow: 0 0 40px rgba(21, 128, 61, 0.12);
+}
+
+/* Stats */
+.stats {
+  background: #f0fdf4;
+  border-color: #dcfce7;
+}
+
+.stat-item {
+  background: #ffffff;
+  border-color: #dcfce7;
+}
+
+.stat-item > i {
+  color: #15803d;
+}
+
+.stat-item h2 {
+  color: #222222;
+}
+
+.stat-item h2 span {
+  color: #dc2626;
+}
+
+.stat-item p {
+  color: #64748b;
+}
+
+/* หัวข้อแต่ละ Section */
+.section-label {
+  color: #dc2626;
+}
+
+.section-heading h2 {
+  color: #222222;
+}
+
+.section-heading p {
+  color: #64748b;
+}
+
+/* About */
+.about {
+  background: #ffffff;
+}
+
+.about-heading h2 {
+  color: #222222;
+}
+
+.about-line {
+  background: #dc2626;
+}
+
+.about-description p {
+  color: #4b5563;
+}
+
+.about-detail-item h3 {
+  color: #15803d;
+}
+
+.about-detail-item p {
+  color: #555555;
+}
+
+/* Skills */
+.skills {
+  background: #f0fdf4;
+}
+
+.skill-card {
+  background: #ffffff;
+  border-color: #dcfce7;
+}
+
+.skill-card:hover {
+  border-color: #15803d;
+}
+
+.skill-icon {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.skill-card h3 {
+  color: #222222;
+}
+
+.skill-card p {
+  color: #64748b;
+}
+
+.skill-tags span {
+  background: #f0fdf4;
+  color: #166534;
+}
+
+.skill-tags span:hover {
+  background: #dc2626;
+  color: #ffffff;
+}
+
+/* Projects */
+.project-card {
+  background: #ffffff;
+  border-color: #e5e7eb;
+}
+
+.project-card:hover {
+  border-color: #15803d;
+}
+
+.ecommerce {
+  background: linear-gradient(135deg, #166534, #22c55e);
+}
+
+.chat {
+  background: linear-gradient(135deg, #991b1b, #ef4444);
+}
+
+.dashboard {
+  background: linear-gradient(135deg, #14532d, #15803d);
+}
+
+.project-top h3 {
+  color: #222222;
+}
+
+.project-top a {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.project-info > p {
+  color: #64748b;
+}
+
+.tags span {
+  background: #f0fdf4;
+  color: #166534;
+}
+
+/* Contact */
+.contact {
+  background: #f0fdf4;
+}
+
+.contact-wrapper {
+  background: #ffffff;
+  border-color: #dcfce7;
+}
+
+.contact-info h2 {
+  color: #222222;
+}
+
+.contact-info > p {
+  color: #64748b;
+}
+
+.contact-email {
+  color: #15803d;
+}
+
+.location i {
+  color: #dc2626;
+}
+
+.form-group label {
+  color: #333333;
+}
+
+.form-group input,
+.form-group textarea {
+  background: #f9fafb;
+  color: #222222;
+  border-color: #d1d5db;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #15803d;
+  box-shadow: 0 0 0 3px rgba(21, 128, 61, 0.1);
+}
+
+.form-status {
+  color: #15803d;
+}
+
+/* Footer */
+.footer {
+  background: #ffffff;
+  border-color: #e5e7eb;
+}
+
+.footer .logo span {
+  color: #15803d;
+}
+
+.footer-content p {
+  color: #64748b;
+}
+
+.footer-content p span {
+  color: #dc2626;
+}
+
+/* ปุ่มกลับด้านบน */
+#back-top {
+  background: linear-gradient(135deg, #15803d, #22c55e);
+}
+
+/* เส้นตกแต่ง */
+.about-line,
 .youtube-line {
-  display: block;
-  width: 80px;
-  height: 3px;
-  background: #ff5722;
-  margin: 0 auto;
+  background: #dc2626;
 }
 
-/* Video and Description */
-.youtube-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.youtube-video {
-  width: 65%;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  border-radius: 12px;
-  background: #000;
-}
-
-.youtube-video iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-.youtube-description {
-  width: 32%;
-  padding: 25px;
-  background: #1f1f1f;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-}
-
-.youtube-description h3 {
-  color: #ff5722;
-  font-family: 'Kanit', sans-serif;
-  font-size: 22px;
-  margin-bottom: 15px;
-}
-
-.youtube-description p {
-  color: #ccc;
-  font-family: 'Kanit', sans-serif;
-  font-size: 16px;
-  line-height: 1.8;
-}
-
-/* Mobile Responsive */
-@media screen and (max-width: 768px) {
-  .youtube-content {
-    flex-direction: column;
-    padding: 0 15px;
-  }
-
-  .youtube-video {
-    width: 100%;
-  }
-
-  .youtube-description {
-    width: 100%;
-  }
-
-  .youtube-heading h2 {
-    font-size: 26px;
-  }
-}
-
-/* YouTube section — Red / White theme */
+/* YouTube */
 .youtube {
   background: #ffffff;
 }
 
 .youtube-heading h2 {
-  color: #292929;
-}
-
-.youtube-line {
-  background: #dc2626;
-}
-
-.youtube-video {
-  background: #f3f4f6;
-  border: 1px solid #e5e7eb;
-  box-shadow: 0 12px 30px rgba(220, 38, 38, .08);
-}
-
-.youtube-description {
-  background: #f9fafb;
-  border: 1px solid #e5e7eb;
-  box-shadow: 0 12px 30px rgba(220, 38, 38, .06);
+  color: #222222;
 }
 
 .youtube-description h3 {
-  color: #dc2626;
+  color: #15803d;
 }
 
 .youtube-description p {
-  color: #6b7280;
+  color: #64748b;
+}
+
+/* Mobile Menu */
+@media (max-width: 700px) {
+  .nav-menu {
+    background: #ffffff;
+    border-color: #dcfce7;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-list .nav-link {
+    color: #333333;
+  }
+
+  .nav-list .nav-link:hover {
+    color: #15803d;
+  }
+}
+
+/* Animation */
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
 }
